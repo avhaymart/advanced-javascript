@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import Students from './Students'
 
+var students = [ 'Muhh', 'av'
+]
 export class References extends Component {
   constructor() {
     super()
     this.state = {
       toggleValue: true,
-      students: [
-        { name: 'Muhammad' },
-        { name: 'Avonlea' }
-      ]
+      students: students
     }
   }
   
   render() {
-    const { toggleValue, students } = this.state
+    const toggleValue = this.state.toggleValue;
+    const students = this.state.students;
     
     return (
       <div>

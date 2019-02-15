@@ -56,10 +56,10 @@ g[1] = 99
 
 
 
-// const m = [{ name: 'T$' }]
-// const n = m.slice()
+const m = [{ name: 'T$' }]
+const n = m.slice()
 // console.log('m === n', m === n)
-// m[0].name = 'Jemira'
+m[0].name = 'Jemira'
 // console.log('m[0]', m[0])
 // console.log('n[0]', n[0])
 // console.log('n[0] === m[0]', n[0] === m[0])
@@ -83,8 +83,8 @@ g[1] = 99
 // So what's wrong with this code?
 function render() {
   const array = [7, 9, 8]
-  const max = getMax(array.slice())
   const count = array.length
+  const max = getMax(array)
   
   return `<div>
     <div>Max value: ${max}</div>
@@ -109,8 +109,8 @@ function getMax(arr) {
 
 // What's wrong with this code?
 function exercise1() {
-  let arr = [{ name: 'Tiffany' }, { name: 'Panil' }]
-  let indexOfTiffany = arr.indexOf({ name: 'Tiffany' })
-  console.log('indexOfTiffany', indexOfTiffany)
+  const arr = [{ name: 'Tiffany' }, { name: 'Panil' }]
+  const indexOfTiffany = arr.indexOf({ name: 'Tiffany' })
+  // console.log('indexOfTiffany', indexOfTiffany)
 }
 exercise1()
